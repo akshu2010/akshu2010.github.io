@@ -1,100 +1,73 @@
-.main
-{
-    width: 602px;
+#main {
+    width: 702px;
     margin: 0 auto;
 }
 
-.clear
-{
+.clear {
     clear: left;
 }
 
-.baseinfo
-{
-    width: 602px;
+.base-info {
     height: 185px;
     margin: 0 auto;
 }
 
-.head-portrait
-{
+.head-portrait {
     float: left;
     overflow: hidden;
-
     width: 84px;
     height: 120px;
     padding: 12px;
-
     border: 1px solid rgb(220, 219, 219);
 }
 
-.head-portrait img
-{
+.head-portrait img {
     height: 120px;
 }
 
-.base-ul
-{
+.base-ul {
     float: left;
-
-    width: 432px;
     margin-left: 20px;
 }
 
-.base-ul li
-{
+.base-ul li {
     margin-top: 10px;
 }
 
-.skillinfo
-{
-    width: 602px;
+.skill-info {
     margin: 0 auto;
 }
 
-.skillBox
-{
+.skill-box {
     list-style: none;
 }
 
-.skillBox li
-{
+.skill-box li {
     display: inline-block;
-
     margin: 0 10px 10px 0;
 }
 
-.skillBox li a
-{
+.skill-box li a {
     font-size: 12px;
     line-height: 24px;
-
     float: left;
-
     width: 23px;
     height: 24px;
-
     text-align: center;
-
     color: #fff;
     border-radius: 2px 0 0 2px;
     background: #1c91d5;
 }
 
-.skillBox li span
-{
+.skill-box li span {
     font: inherit;
     font-family: SimSun;
     font-size: 12px;
     line-height: 22px;
-
     float: left;
-
     height: 22px;
     padding: 0 6px;
-
     vertical-align: baseline;
-
     color: #333;
     border: 1px solid #d2d2d2;
     border-width: 1px 1px 1px 0;
