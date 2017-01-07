@@ -1,0 +1,35 @@
+.wrap {
+  position: relative;
+}
+
+.image {
+  margin-bottom: 5px;
+  height: 420px;
+}
+
+.image img {
+  border-radius: 25px;
+}
+
+.down {
+  position: relative;
+}
+
+.reflection {
+  width: 700px;
+  height: 200px;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  opacity: .5;
+  border-radius: 25px;
+  background: url(../../img/img_visual/01.jpg) bottom center no-repeat;
+}
+
+.overlay {
+  position: relative;
+  bottom: 150px;
+  width: 700px;
+  height: 150px;
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 30%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.20, rgb(255, 255, 255)), color-stop(.90, rgba(0, 0, 0, 0)));
+}

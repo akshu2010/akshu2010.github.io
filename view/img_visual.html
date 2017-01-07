@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>图片特效</title>
+  <!-- 图片倒影特效 -->
+  <link rel="stylesheet" href="../css/img_visual/ims_visual.css">
+  <!-- 图片轮播特效 -->
+  <link rel="stylesheet" href="../css/img_visual/carousel.css">
+  <style>
+  .carousel-container {
+    float: left;
+    width: 700px;
+    height: 420px;
+    margin: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,255,128);
+    border-radius: 25px;
+  }
+  
+  .reflect-container {
+    float: left;
+    width: 700px;
+    height: 625px;
+    margin: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(0,0,255,128);
+  }
+  </style>
+</head>
+
+<body>
+  <!-- 图片轮播 模块-->
+  <div class="carousel-container">
+    <div class="carousel">
+      <a class="carousel-imgnum carousel-imglink1">1</a>
+      <a class="carousel-imgnum carousel-imglink2">2</a>
+      <a class="carousel-imgnum carousel-imglink3">3</a>
+      <a class="carousel-imgnum carousel-imglink4">4</a>
+      <a class="carousel-imgnum carousel-imglink5">5</a>
+      <div class="carousel-photos">
+        <img src="../img/img_visual/01.jpg">
+        <img src="../img/img_visual/02.jpg">
+        <img src="../img/img_visual/03.jpg">
+        <img src="../img/img_visual/04.jpg">
+        <img src="../img/img_visual/05.jpg">
+        <ul class="carousel-detail">
+          <li>明星 女1</li>
+          <li>明星 女2</li>
+          <li>明星 女3</li>
+          <li>明星 女4</li>
+          <li>明星 女5</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 图片轮播 endding-->
+  <!-- 图片倒影 模块-->
+  <div class="reflect-container">
+    <div class="wrap">
+      <div class="image"><img src="../img/img_visual/01.jpg" /></div>
+      <div class="down">
+        <div class="reflection"></div>
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 图片倒影 endding-->
+  <!-- #todo add together-->
+</body>
+
+</html>

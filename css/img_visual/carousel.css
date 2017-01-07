@@ -1,0 +1,192 @@
+/*---修改图片数量的话需要修改下面的动画参数，每图片切换有两个阶段：位移切换和静置。中间的效果可以任意定制--*/
+/*--图片轮播 模块--*/
+.carousel {
+  /*--图片轮播相框容器--*/
+  position: absolute;
+  overflow: hidden;
+  width: 700px;
+  height: 420px;
+}
+.carousel-imgnum {
+  /*--图片序号--*/
+  line-height: 25px;
+  position: absolute;
+  top: 385px;
+  right: 10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+  opacity: .5;
+  color: #fff;
+  border-radius: 100%;
+  background: #f00;
+}
+.carousel-imgnum:hover {
+  background: #00f;
+}
+.carousel-imgnum:hover,
+.carousel-photos:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.carousel-imgnum:nth-child(4) {
+  margin-right: 30px;
+}
+.carousel-imgnum:nth-child(3) {
+  margin-right: 60px;
+}
+.carousel-imgnum:nth-child(2) {
+  margin-right: 90px;
+}
+.carousel-imgnum:nth-child(1) {
+  margin-right: 120px;
+}
+.carousel-imglink1:hover ~ .carousel-photos {
+  -webkit-animation: ma1 0.5s ease-out forwards;
+  animation: ma1 0.5s ease-out forwards;
+}
+.carousel-imglink2:hover ~ .carousel-photos {
+  -webkit-animation: ma2 0.5s ease-out forwards;
+  animation: ma2 0.5s ease-out forwards;
+}
+.carousel-imglink3:hover ~ .carousel-photos {
+  -webkit-animation: ma3 0.5s ease-out forwards;
+  animation: ma3 0.5s ease-out forwards;
+}
+.carousel-imglink4:hover ~ .carousel-photos {
+  -webkit-animation: ma4 0.5s ease-out forwards;
+  animation: ma4 0.5s ease-out forwards;
+}
+.carousel-imglink5:hover ~ .carousel-photos {
+  -webkit-animation: ma5 0.5s ease-out forwards;
+  animation: ma5 0.5s ease-out forwards;
+}
+@-webkit-keyframes ma1 {
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes ma1 {
+  100% {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes ma2 {
+  100% {
+    margin-left: -700px;
+  }
+}
+@keyframes ma2 {
+  100% {
+    margin-left: -700px;
+  }
+}
+@-webkit-keyframes ma3 {
+  100% {
+    margin-left: -1400px;
+  }
+}
+@keyframes ma3 {
+  100% {
+    margin-left: -1400px;
+  }
+}
+@-webkit-keyframes ma4 {
+  100% {
+    margin-left: -2100px;
+  }
+}
+@keyframes ma4 {
+  100% {
+    margin-left: -2100px;
+  }
+}
+@-webkit-keyframes ma5 {
+  100% {
+    margin-left: -2800px;
+  }
+}
+@keyframes ma5 {
+  100% {
+    margin-left: -2800px;
+  }
+}
+.carousel-photos {
+  /*--设置总的图片宽度,通过位移来达到轮播效果--*/
+  position: absolute;
+  z-index: -1;
+  /*--修改图片数量的话需要修改下面的动画参数--*/
+  width: 3500px;
+  -webkit-animation: ma 10s ease infinite alternate;
+  animation: ma 10s ease infinite alternate;
+}
+.carousel-photos img {
+  float: left;
+  width: 700px;
+  height: 420px;
+}
+@-webkit-keyframes ma {
+  0%,
+  20% {
+    margin-left: 0;
+  }
+  25%,
+  40% {
+    margin-left: -700px;
+  }
+  45%,
+  60% {
+    margin-left: -1400px;
+  }
+  65%,
+  80% {
+    margin-left: -2100px;
+  }
+  85%,
+  100% {
+    margin-left: -2800px;
+  }
+}
+@keyframes ma {
+  0%,
+  20% {
+    margin-left: 0;
+  }
+  25%,
+  40% {
+    margin-left: -700px;
+  }
+  45%,
+  60% {
+    margin-left: -1400px;
+  }
+  65%,
+  80% {
+    margin-left: -2100px;
+  }
+  85%,
+  100% {
+    margin-left: -2800px;
+  }
+}
+.carousel-detail {
+  /*--绝对定位方便li图片简介的自动分布定位--*/
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  opacity: .5;
+}
+.carousel-detail li {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  height: 20px;
+  margin: 0 250px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background: #000;
+}
+/*--图片轮播 endding--*/
