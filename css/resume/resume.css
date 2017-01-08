@@ -7,6 +7,10 @@
     clear: left;
 }
 
+br {
+    clear: left;
+}
+
 .base-info {
     height: 185px;
     margin: 0 auto;
