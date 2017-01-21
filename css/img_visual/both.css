@@ -1,29 +1,30 @@
 .both-effect {
-    height: 625px;
+  height: 625px;
+  border-radius: 15px;
 }
 
 .both-wrap {
-    float: left;
-    height: 625px;
+  float: left;
+  height: 625px;
 }
 
 .reflection-img1 {
-    /*-- 倒影图片，对应html中图片 --*/
-    background-image: url(../../img/img_visual/01.jpg);
+  /*-- 倒影图片，对应html中图片 --*/
+  background-image: url(../../img/img_visual/01.jpg);
 }
 
 .reflection-img2 {
-    background-image: url(../../img/img_visual/02.jpg);
+  background-image: url(../../img/img_visual/02.jpg);
 }
 
 .reflection-img3 {
-    background-image: url(../../img/img_visual/03.jpg);
+  background-image: url(../../img/img_visual/03.jpg);
 }
 
 .reflection-img4 {
-    background-image: url(../../img/img_visual/04.jpg);
+  background-image: url(../../img/img_visual/04.jpg);
 }
 
 .reflection-img5 {
-    background-image: url(../../img/img_visual/05.jpg);
+  background-image: url(../../img/img_visual/05.jpg);
 }
